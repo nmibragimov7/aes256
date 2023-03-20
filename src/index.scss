@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.BaseField {
+  @apply h-full w-full leading-none bg-white-blue p-4 placeholder:font-light placeholder:text-gray outline-none border border-solid border-transparent;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+}
+
+.BaseButton {
+  @apply w-full font-medium leading-tight bg-primary-blue hover:bg-primary-blue/90 disabled:bg-primary-blue/90 shadow text-white px-8 py-4;
+}
